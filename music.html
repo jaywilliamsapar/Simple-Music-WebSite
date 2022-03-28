@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="musicstyle.css">
+    <title>myDog Music WebSite</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="/Sound webpage_img/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Specification</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>WILLIAM <br>DUKE<br> MUSIC</h1>
+            </div>
+            <div class="right-col">
+                <h2>Click here to Listen</h2>
+                <img src="/play.png" id="icon">
+            </div>
+        </div>
+
+    </div>
+
+    <audio id="mySong">
+        <source src="/tutu.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+
+        var mySong = document.getElementsById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            mySong.play();
+        }
+    </script>
+</body>
+
+</html>
